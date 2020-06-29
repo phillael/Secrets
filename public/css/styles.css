@@ -1,16 +1,60 @@
+h1 {
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  animation: wheelHueColor 5s infinite;
+}
+
+h3 {
+  font-family: 'Audiowide', cursive;
+  font-style: oblique;
+}
+
+h5 {
+  font-size: 1rem;
+}
 
 body {
-  background-color: #E8ECEF;
+  color: white;
+  background-image: url("https://media.giphy.com/media/xT9IgwvIzQOUIeVxAI/giphy.gif");
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.fas {
+  animation: wheelHueColor 7s infinite;
+}
+.google {
+  margin: 80px 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.jumbotron {
+  background-image: url("https://media.giphy.com/media/xT9IgwvIzQOUIeVxAI/giphy.gif");
+  background-size: cover;
 }
 
 .centered {
-    padding-top: 200px;
-    text-align: center;
+  padding-top: 200px;
+  text-align: center;
 }
 
 .secret-text {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: #fff;
-  background-color: #000;
+  background-color: #252524;
+}
+
+@keyframes wheelHueColor {
+  from, to {
+    color: white;
+  }
+
+  25% {
+    color: #e9ffbf;
+  }
+  75%{
+    color: #fffccd;
+  }
 }
