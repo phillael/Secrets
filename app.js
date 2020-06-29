@@ -13,7 +13,8 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 //////////////////////////////////////////////////////
 
-mongoose.connect("mongodb+srv://Phillael:ITyMJVBDE7Cf8vSW@cluster0-l4vod.mongodb.net/userDB", {
+const password = process.env.MONGO_PASSWORD
+mongoose.connect("mongodb+srv://Phillael:" + password + "@cluster0-l4vod.mongodb.net/userDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
