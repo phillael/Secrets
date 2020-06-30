@@ -133,6 +133,7 @@ app.get("/submit", function(req, res) {
   if (req.isAuthenticated()) {
     res.render("submit");
   } else {
+    console.log("not authenticated");
     res.redirect("login");
   }
 });
